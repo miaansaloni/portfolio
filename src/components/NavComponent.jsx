@@ -9,7 +9,9 @@ const NavComponent = () => {
           <a href="/about">About</a>
         </li>
         <li>
-          <a href="/projects">Projects</a>
+          <a href="/projects">
+            Projects <span></span>
+          </a>
         </li>
         <li>
           <a href="/contact">Contact</a>

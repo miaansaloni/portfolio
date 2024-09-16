@@ -55,15 +55,42 @@ nav.navbar {
   border-radius: 10px;
   margin-inline-end: 0.5rem;
   margin-bottom: 0.5rem;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.box:hover {
+  background-color: #f0a500;
+  color: #ffffff;
+}
+
+.boxheading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.arrowicon {
+  width: 25px;
+}
+
+.container-left,
+.container-right {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 6; /* Si espandono per occupare lo spazio verticale */
+}
+
+.top-elements,
+.bottom-elements {
+  display: flex;
+  flex-grow: 1; /* Occupa lo spazio disponibile */
 }
 
 .container-left {
   flex-grow: 2;
 }
 
-.top-elements {
-  display: flex;
-}
 .cta-section {
   flex-grow: 1;
 }
@@ -71,9 +98,6 @@ nav.navbar {
   flex-grow: 0.7;
 }
 
-.bottom-elements {
-  display: flex;
-}
 .desc-section {
   flex-grow: 1;
 }
@@ -85,9 +109,8 @@ nav.navbar {
   flex-grow: 1;
 }
 
-.projects-section {
-  margin-inline-end: 0;
-}
+.projects-section,
 .contacts-section {
+  flex-grow: 1; /* Le sezioni nella colonna destra si espandono verticalmente */
   margin-inline-end: 0;
 }
